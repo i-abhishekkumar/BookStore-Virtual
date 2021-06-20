@@ -1,0 +1,149 @@
+main {
+  min-height: 80vh;
+}
+nav{
+  background-image: linear-gradient(to right, #7400b8 , #56cfe1);
+  /* background-image: linear-gradient(to right, #012a4a , #2a6f97); */
+}
+/* header + nav{
+  background-image: inherit;
+} */
+
+h3 {
+  padding: 1rem 0;
+}
+h1 {
+  font-size: 1.8rem;
+  padding: 1rem 0;
+}
+h2 {
+  font-size: 1.4rem;
+  padding: 0.5rem 0;
+}
+.rating span {
+  margin: 0.1rem;
+}
+.color-red {
+  color: #b83227;
+}
+.color-green {
+  color: #6ab04a;
+}
+
+Image {
+  margin: 100px;
+}
+
+/* .col-xl-3{
+  background-color: rgb(241, 228, 228);
+} */
+.my-3 {
+  transition: 0.3s;
+ 
+}
+
+.my-3:hover {
+  box-shadow: 12px 12px 2px 1px rgba(119, 119, 138, 0.15);
+}
+
+.mr-sm-2{
+  /* background-color: red; */
+  /* border-radius: 50%; */
+  border-end-start-radius: 50%;
+  border-top-right-radius: 10px;
+}
+
+#ex4 .p1[data-count]:after {
+  position: absolute;
+  right: 10%;
+  top: 8%;
+  content: attr(data-count);
+  font-size: 40%;
+  padding: 0.2em;
+  border-radius: 50%;
+  line-height: 1em;
+  color: white;
+  background: rgba(255, 0, 0, 0.85);
+  text-align: center;
+  min-width: 1em;
+  font-weight: bold;
+}
+
+/* carousel */
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active {
+  display: flex;
+}
+.carousel-caption {
+  position: absolute;
+  top: 0;
+}
+.carousel-caption h2 {
+  color: #fff;
+}
+.carousel img {
+  height: 300px;
+  padding: 30px;
+  margin: 40px;
+  border-radius: 50%;
+}
+.carousel a {
+  margin: 0 auto;
+}
+
+.bg-dark {
+  background-color: #131517 !important;
+}
+.logo {
+  font-family: 'Mansalva', cursive;
+}
+
+/* fun */
+
+
+.headerTop::after {
+  content: "";
+  background-image: url("./new2.png");
+  position: absolute;
+  /* bottom: 0; */
+
+  left: 0;
+  right: 0;
+  /* bottom: auto; */
+  top: 0;
+  height: 15%;
+  z-index: -3;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-position: bottom;
+}
+
+footer::before {
+  content: "";
+  background-image: url(https://trendtraderkaran.com/wp-content/themes/wp-bootstrap-4/assets/images/footer-shape.png);
+  position: absolute;
+  /* bottom: 0; */
+
+  left: 0;
+  right: 0;
+  /* bottom: auto; */
+
+  height: 15%;
+  z-index: -3;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-position: bottom;
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .headerTop::after {
+    height: 25%;
+  }
+  footer::before {
+    height: 30%;
+  }
+}
